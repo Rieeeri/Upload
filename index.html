@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  *{
+    padding:0;
+    margin:0;
+  }
+
+  .add{
+    animation: t 1s infinite;
+  }
+  @keyframes t{
+    0%{color:red};
+    25%{color:pink};
+    50%{color:black};
+    75%{color:green};
+    100%{color:blue};
+  }
+</style>
+<body>
+<h1 id="a">Click Me!</h1>
+</body>
+<script>
+let a =  document.getElementById("a")
+  
+  a.addEventListener("click", () =>{
+    a.style.color = "blue";
+    a.innerHTML = "You Are g∆y";
+    a.classList.add("add");
+  });
+</script>
+</html>
